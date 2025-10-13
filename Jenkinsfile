@@ -29,7 +29,7 @@ pipeline {
         // ===== BACKEND BUILD =====
         stage('Build Backend') {
             steps {
-                dir('outpass-backend/outpass-backend') {
+                dir('outpass-backend\\outpass-backend') {
                     bat 'mvn clean package'
                 }
             }
