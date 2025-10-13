@@ -1,0 +1,13 @@
+package com.klef.outpassBackend;
+
+
+
+
+import org.springframework.stereotype.Service
+
+
+public class Service {
+
+	
+	
+}

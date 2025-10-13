@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.klef.outpassBackend.Service.java&apos; to &apos;outpassService.java&apos;&#x0D;&#x0A;- Original project: &apos;outpass-backend&apos;&#x0D;&#x0A;- Original element: &apos;com.klef.outpassBackend.Service.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.klef.outpassBackend.outpassService.java&apos;" description="Rename compilation unit &apos;Service.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.klef.outpassBackend{Service.java" name="outpassService.java" references="false" stamp="1760350419817" version="1.0"/>
+</session>

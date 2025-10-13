@@ -1,0 +1,2 @@
+spring.application.name=outpass-backend
+server.port=2000

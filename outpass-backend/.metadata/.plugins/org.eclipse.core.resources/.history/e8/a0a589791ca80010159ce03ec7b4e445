@@ -1,0 +1,5 @@
+package com.klef.outpassBackend;
+
+public interface Repository {
+
+}
