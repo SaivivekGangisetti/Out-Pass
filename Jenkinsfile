@@ -13,7 +13,6 @@ pipeline {
             }
         }
 
-
         // ===== FRONTEND DEPLOY =====
         stage('Deploy Frontend to Tomcat') {
             steps {
@@ -22,7 +21,7 @@ pipeline {
                     rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\outpass-frontend"
                 )
                 mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\outpass-frontend"
-                xcopy /E /I /Y outpass-frontend\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\"
+                xcopy /E /I /Y outpass-frontend\\dist\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\outpass-frontend\\"
                 '''
             }
         }
@@ -30,12 +29,11 @@ pipeline {
         // ===== BACKEND BUILD =====
         stage('Build Backend') {
             steps {
-                dir('outpass-backend\\outpass-backend') {
+                dir('outpass-backend/outpass-backend') {
                     bat 'mvn clean package'
                 }
             }
         }
-        
 
         // ===== BACKEND DEPLOY =====
         stage('Deploy Backend to Tomcat') {
