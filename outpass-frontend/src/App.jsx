@@ -25,7 +25,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:2030/outpass-backend/', {
+      const response = await fetch('http://localhost:2025/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -54,7 +54,7 @@ const App = () => {
   // Fetch all outpasses
   const fetchOutpasses = async () => {
     try {
-      const response = await fetch('http://localhost:2030/outpass-backend/all'); // backend port updated
+      const response = await fetch('http://localhost:2025/all'); // backend port updated
       const data = await response.json();
       setOutpasses(data);
     } catch (error) {
