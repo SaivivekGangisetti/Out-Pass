@@ -29,7 +29,7 @@ jobs:
           context: ./outpass-backend
           file: ./outpass-backend/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-gitactions-backend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/outpass-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
@@ -37,4 +37,4 @@ jobs:
           context: ./outpass-frontend
           file: ./outpass-frontend/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-gitactions-frontend:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/outpass-frontend:latest
